@@ -1,8 +1,10 @@
-// src/screens/LoginScreen.js
 import React from 'react';
+import PropTypes from 'prop-types';
 import { View, Text, Button, StyleSheet } from 'react-native';
 
-const LoginScreen = ({ navigation }) => {
+import { NavigationProp } from '@react-navigation/native';
+
+const LoginScreen = ({ navigation }: { navigation: NavigationProp<any> }) => {
     return (
         <View style={styles.container}>
             <Text style={styles.title}>ARC Gym Partner Finder</Text>
@@ -12,6 +14,10 @@ const LoginScreen = ({ navigation }) => {
             />
         </View>
     );
+};
+
+LoginScreen.propTypes = {
+    navigation: PropTypes.object.isRequired,
 };
 
 const styles = StyleSheet.create({
