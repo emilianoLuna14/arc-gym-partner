@@ -1,11 +1,11 @@
 // src/navigation/AppNavigator.js
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import LoginScreen from '../screens/LoginScreen';
-import HomeScreen from '../screens/HomeScreen';
-import MatchmakingScreen from '../screens/MatchmakingScreen';
-import ProfileScreen from '../screens/ProfileScreen';
-import ChatScreen from '../screens/ChatScreen';
+import LoginScreen from '../screens/login';
+import HomeScreen from '../screens/home';
+import MatchmakingScreen from '../screens/matchmaking';
+import ProfileScreen from '../screens/profile';
+import ChatScreen from '../screens/chat';
 
 const Stack = createStackNavigator();
 
